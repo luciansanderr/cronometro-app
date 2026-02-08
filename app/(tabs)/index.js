@@ -45,7 +45,7 @@ class AppCronometro extends Component {
 
   render() {
     return(
-      <View style={style.container}>
+      <View style={styleCronometro.container}>
         <View style={styleCronometro.resultado}>
           <Text style={styleCronometro.txtResultado}>Ultimo Tempo: {this.state.ultimoTempo}</Text>
         </View>
@@ -68,6 +68,11 @@ class AppCronometro extends Component {
 }
 
 const styleCronometro = StyleSheet.create({
+  container: {
+    flex:1,
+    alignItems: "center",
+    backgroundColor: "#5C627A"
+  },
   resultado: {
     borderWidth: 4,
     borderColor: '#e1cf0a',
